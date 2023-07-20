@@ -2,51 +2,44 @@ import { navbar } from "vuepress-theme-hope";
 
 export default navbar([
   "/",
-  "/demo/",
   {
     text: "博文",
-    icon: "pen-to-square",
-    prefix: "/posts/",
-    children: [
-      {
-        text: "苹果",
-        icon: "pen-to-square",
-        prefix: "apple/",
-        children: [
-          { text: "苹果1", icon: "pen-to-square", link: "1" },
-          { text: "苹果2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
-        ],
-      },
-      {
-        text: "香蕉",
-        icon: "pen-to-square",
-        prefix: "banana/",
-        children: [
-          {
-            text: "香蕉 1",
-            icon: "pen-to-square",
-            link: "1",
-          },
-          {
-            text: "香蕉 2",
-            icon: "pen-to-square",
-            link: "2",
-          },
-          "3",
-          "4",
-        ],
-      },
-      { text: "樱桃", icon: "pen-to-square", link: "cherry" },
-      { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
-      "tomato",
-      "strawberry",
-    ],
+    icon: "book",
+    link: "/article/"
   },
   {
-    text: "V2 文档",
-    icon: "book",
-    link: "https://theme-hope.vuejs.press/zh/",
+    text: "聚餐",
+    icon: "users",
+    link: "/together/"
   },
+  {
+    text: "旅游",
+    icon: "plane-departure",
+    link: "/travel/"
+  },
+  {
+    text: "游戏",
+    icon: "gamepad",
+    link: "/game/"
+  },
+  {
+    text: "信息",
+    icon: "cloud",
+    link: "/information/"
+  },
+  {
+    text: "时间轴",
+    icon: "hourglass-half",
+    link: "/timeline/"
+  },
+  {
+    text: "索引",
+    icon: "magnifying-glass",
+    children: [
+      { text: "分类", icon: "list", link: "/category/" }, 
+      { text: "标签", icon: "tags", link: "/tag/" },
+      { text: "收藏", icon: "star", link: "/star/" },  
+    ]
+  },
+
 ]);
